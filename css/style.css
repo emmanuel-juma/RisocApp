@@ -3,5 +3,53 @@ html{
 }
 
 body{
-    background-color: bisque;
+    background-color: rgb(202, 231, 255);
+    font-family: Roboto, Arial, Helvetica, sans-serif;   
 }
+
+
+/*
+===========
+Navbar and header styles
+===========
+*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .35s ease;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(16px);
+    background:  rgba(202, 231, 255, 0.632);;
+}
+
+.navbar{
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navbar-item{
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    
+}
+.navbar-item a{
+    margin: 3px;
+    color: rgb(37, 36, 36);
+    text-decoration: none;
+}
+.navbar-item a:hover{
+    color: blueviolet;
+    font-size: larger;
+    transition: .35s ease;
+}
+.logo p{
+    font-weight: 1000;
+    margin: 10px;
+}
+
