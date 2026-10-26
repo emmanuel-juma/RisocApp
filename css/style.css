@@ -38,18 +38,62 @@ header{
     margin: 10px;
     
 }
+
 .navbar-item a{
     margin: 3px;
     color: rgb(37, 36, 36);
     text-decoration: none;
 }
+
 .navbar-item a:hover{
     color: blueviolet;
     font-size: larger;
     transition: .35s ease;
 }
+
 .logo p{
     font-weight: 1000;
     margin: 10px;
 }
 
+
+
+
+
+#app{  
+    justify-content: center;
+    width: 90%;
+    margin: 100px;
+}
+section{
+    background-color: rgb(173, 226, 247);
+    padding: 50px;
+    margin: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(11, 8, 117, 0.3);
+  
+    
+}
+.hero-item h1{
+    color: rgb(57, 12, 100);
+    font-size: clamp(2.8rem, 6vw, 5rem);
+    line-height: 1.1;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    margin-bottom: 50px;
+    
+}
+.hero-item p{
+   color: rgb(39, 5, 84);
+}
+.intruction-item h2{
+    font-weight: 800;
+    color: rgb(57, 12, 100);
+
+}
+.intruction-item ol li{
+    margin: 5px;
+}
+.intruction-item ol li:hover{
+    color:  rgb(93, 19, 161);
+}
