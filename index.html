@@ -29,7 +29,7 @@
     The main app structure
     =========================
     -->
-    <div id="app">
+    <main id="app">
         <!--
         ==============================
         About section structure
@@ -58,10 +58,46 @@
         -->
         <section id="instruction">
             <div class="intruction-item">
+                <h2>
+                    Instruction
+                </h2>
 
             </div>
         </section>
+        <!--
+        =======================
+        main app system
+        =======================
+        -->
+        <section id="main">
+            <button>Return</button>
+            <div class="page">
+                <form class="logInform">
+                    <input type="text"  id="username"  placeholder="Enter your email" required>
+                    <input type="password"  id="password"  placeholder="Enter your password" required>
+                    <button type="button">Log In</button>
+                </form>
+            </div>
 
+            <div class="page">
+                <div class="welcome">
+                    <h3>Welcome to our Search Engine</h3>
+                    <p>To Start finding our resources, click the button below</p> <span>!</span>
+                    <button type="button">Get Started</button>
+                </div>
+            </div>
+
+            <div class="page">
+                <div class="searchform">
+                    <input type="text" id="searchInput" placeholder="search for a resource" required>
+                    <button type="button">Search</button>
+                </div>
+                <h2>Books and Links</h2>
+                <div id="allResult"></div>
+                <h2>Video Content</h2>
+                <div id="videoResult"></div>           
+            </div>
+        </section>
         <!--
         =========================
         Blog section stracture
@@ -69,7 +105,42 @@
         -->
         <section id="blog">
             <div class="blog-item">
-
+                <h2>
+                    Blog
+                </h2>
+                <div class="blog-item-content">
+                    <h3>What is the importance</h3>
+                    <p>
+                        Studying helps individuals gain knowledge, develop major skills and even prepare for the future.
+                        <br>
+                        It helps by improving critical skills and thinking, problem-solving and decision making ...<a href="#">Read More</a>
+                       
+                    </p>
+                </div>
+                <div class="blog-item-content">
+                    <h3>Artificial Intelligence</h3>
+                    <p>
+                        Studying has changed because of AI.
+                        <br>
+                        AI helps in explaining difficult concepts, breaking down work into achievable tasks and ...<a href="#">Read More</a>
+                    </p>
+                </div>
+                <div class="blog-item-content">
+                    <h3>The power of Studying</h3>
+                    <p>
+                        Knowledge is the greatest asset you can have as a person who wants to see growth in many areas of their life.
+                        <br>
+                        Reading improves vocabulary, concentration, imagination, and communication skills ...<a href="#">Read More</a>
+                    </p>
+                </div>
+                <div class="blog-item-content">
+                    <h3>Technology and the future</h3>
+                    <p>
+                        Technology makes things easier honestly.
+                        <br>
+                        A combination of technology and things like books is a heavy touch on improving a person's ...<a href="#">Read More</a>
+                    </p>
+                </div>
             </div>
         </section>
 
@@ -80,6 +151,14 @@
         -->
         <section id="contact">
             <div class="contact-item">
+                <h2>
+                    Contact
+                </h2>
+                <div class="contact-form">
+                    <form>
+
+                    </form>
+                </div>
 
             </div>
         </section>
@@ -94,6 +173,6 @@
 
             </div>
         </footer>
-    </div>
+    </main>
 </body>
 </html>
