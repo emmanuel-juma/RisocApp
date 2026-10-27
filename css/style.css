@@ -60,6 +60,13 @@ header{
 
 
 
+#main > .page {
+    display: none;
+}
+
+#main > .page:first-of-type {
+    display: block;
+}
 
 #app{  
     align-items: center;
