@@ -3,6 +3,7 @@ html{
 }
 
 body{
+    line-height: 1.6;
     background-color: rgb(202, 231, 255);
     font-family: Roboto, Arial, Helvetica, sans-serif;   
 }
@@ -21,7 +22,7 @@ header{
     width: 100%;
     z-index: 1000;
     backdrop-filter: blur(16px);
-    background:  rgba(202, 231, 255, 0.632);;
+    background:  rgba(202, 231, 255, 0.632);
 }
 
 .navbar{
@@ -61,19 +62,20 @@ header{
 
 
 #app{  
+    align-items: center;
     justify-content: center;
-    width: 90%;
-    margin: 100px;
+    margin-top: 300px;
 }
+
 section{
     background-color: rgb(173, 226, 247);
     padding: 50px;
     margin: 2.5rem;
     border-radius: 10px;
     box-shadow: 0 20px 35px rgba(11, 8, 117, 0.3);
-  
     
 }
+
 .hero-item h1{
     color: rgb(57, 12, 100);
     font-size: clamp(2.8rem, 6vw, 5rem);
@@ -81,19 +83,182 @@ section{
     font-weight: 800;
     margin-bottom: 1rem;
     margin-bottom: 50px;
-    
 }
+
+
 .hero-item p{
    color: rgb(39, 5, 84);
 }
+
+
 .intruction-item h2{
     font-weight: 800;
     color: rgb(57, 12, 100);
-
 }
+
 .intruction-item ol li{
     margin: 5px;
 }
+
 .intruction-item ol li:hover{
     color:  rgb(93, 19, 161);
+}
+
+
+
+
+
+button{
+    border: none;
+    padding: 10px 25px;
+    border-radius: 10px;
+}
+
+.return{
+    background-color: aliceblue;
+
+}
+
+.return:hover{
+    background-color:  rgb(187, 132, 238);
+    color: white;
+    transition: .35s ease;
+}
+
+.login{
+    background-color:  rgb(187, 132, 238);
+    color: white;
+}
+
+.login:hover{
+    background-color: rgb(206, 165, 244);
+    color: rgb(0, 0, 0);
+    transition: .35s ease;
+}
+
+.search{
+    background-color:  rgb(187, 132, 238);
+    color: white;
+}
+
+.search:hover{
+    background-color: rgb(206, 165, 244);
+    color: rgb(0, 0, 0);
+    transition: .35s ease;
+}
+
+.getStarted{
+    background-color:  rgb(187, 132, 238);
+    color: white;
+}
+
+.getStarted:hover{
+    background-color: rgb(206, 165, 244);
+    color: rgb(0, 0, 0);
+    transition: .35s ease;
+}
+.submit{
+    background-color:  rgb(187, 132, 238);
+    color: white;
+    margin-top: 50px;
+}
+.submit:hover{
+    background-color: rgb(206, 165, 244);
+    color: rgb(0, 0, 0);
+    transition: .35s ease;
+}
+.page{
+    margin-top: 10px;
+    max-width: 600px;
+    text-align: center;
+    padding: 36px 30px;
+    border: 1px solid #e8e2e5;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+.logInform{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+.searchform{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+.logInform input{
+    padding-right: 50px;
+    padding-bottom: 8px;
+    padding-top: 10px;
+    border-radius: 9px;
+    border: none;
+    margin-bottom: 30px;
+    font-family: inherit;
+    font-size: 1rem;
+    padding-left: 10px;
+}
+.logInform input:focus {
+    border-color: #0c0fd1;
+}
+.searchform input{
+    padding-right: 50px;
+    padding-left: 10px;
+    padding-bottom: 8px;
+    padding-top: 10px;
+    border-radius: 9px;
+    border: none;
+    margin-bottom: 30px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.contactform{
+    margin-top: 10px;
+    max-width: 500px;
+    text-align: center;
+    padding: 36px 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+.contactform input{
+    padding-right: 50px;
+    padding-bottom: 8px;
+    padding-top: 10px;
+    border-radius: 9px;
+    border: none;
+    margin-bottom: 30px;
+    font-family: inherit;
+    font-size: 1rem;
+    padding-left: 10px;
+}
+.text{
+    font-family: inherit;
+    border: #e8e2e5;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#blog{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    padding: 30px;
+    
+}
+.blog-item{
+    display: flex;
+   
+}
+.blog-item-content{
+   min-height: 180px;
+   background-color: azure;
+   border-radius: 12px;
+   padding: 30px;
+   margin: 30px;
+   overflow: hidden;
+   box-shadow: 0 20px 35px rgba(11, 8, 117, 0.3);
+
 }
