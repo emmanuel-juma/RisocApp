@@ -15,8 +15,8 @@
 
     <header>
         <nav class="navbar">
-            <div class="logo"></div>
-            <div navbar-item>
+            <div class="logo"><p>RA</p></div>
+            <div class="navbar-item">
                 <a href="#about">About the app</a>
                 <a href="#instruction">How to use it</a>
                 <a href="#blog">Blog</a>
@@ -30,79 +30,93 @@
     The main app structure
     =========================
     -->
+    
     <main id="app">
         <!--
         ==============================
         About section structure
         ==============================       
         -->
-        <section id="about">
-            <div class="about-item">
-                <h1>
-                    Welcome to ResocApp
-                </h1>
-                <p>
-                    ResocApp is a platform that allows students and researchers to find resources in terms of Youtube videos, books and resourceful links. 
-                    <br>
-                    Whether you study Engineering or researching about phylosophy and baking, you can do it with Resoc App. Discover resources, links and videos via ResocApp. 
-                </p>
-                <br>
-                <p>
-                    Our goal is to bring learning resources together in one place, with a simple design that makes it easy to research and find information.                    
-                </p>
-            </div>
-        </section>
-        <!--
-        =========================
-        Instruction section stracture
-        =========================
-        -->
-        <section id="instruction">
-            <div class="intruction-item">
-                <h2>
-                    Instruction
-                </h2>
-                <ol>
-                    <li> Enter your Credentials and click Log In. </li>
-                    <li>Click the 'Get Started' button</li>
-                    <li>Search what you need</li>
-                    <li>Click Log out to begin the process</li>
-                </ol>
+        <div class="welcome-banner">
+            
+            <section id="hero">
+                <div class="hero-item">
+                    <h1>
+                        Welcome to<br>ResocApp
+                    </h1>
+                    <p>
+                        ResocApp is a platform that allows students and researchers to find resources in terms of Youtube videos, books and resourceful links. 
+                        <br>
+                        <br>
+                        Whether you study Engineering or researching about phylosophy and baking, you can do it with Resoc App. Discover resources, links and videos via ResocApp. 
+                    </p>
+                
+                    <p>
+                        Our goal is to bring learning resources together in one place, with a simple design that makes it easy to research and find information.                    
+                    </p>
+                </div>
+            </section>
+            <!--
+            =========================
+            Instruction section stracture
+            =========================
+            -->
+        
+            <section id="instruction">
+                <div class="intruction-item">
+                    <h2>
+                        Instruction
+                    </h2>
 
-            </div>
-        </section>
+                    <ol>
+                        <li> Enter your Credentials and click Log In. </li>
+                        <li>Click the 'Get Started' button</li>
+                        <li>Search what you need</li>
+                        <li>Click Log out to begin the process</li>
+                    </ol>
+
+                </div>
+            </section>
+
+        </div>
+        
+        
         <!--
         =======================
         main app system
         =======================
         -->
         <section id="main">
-            <button>Return</button>
+            <div class="constant-button"><button class="return">Return</button></div>
+            
+
             <div class="page">
-                <form class="logInform">
+                <div id="welcome">
+                    <h3>Welcome to our Search Engine</h3>
+                    <p>To Start finding our resources, click the button below</p>
+                    <button type="button" class="getStarted">Get Started</button>
+                </div>
+            </div>
+
+
+            <div class="page">
+                <form id="logInform">
                     <input type="text"  id="username"  placeholder="Enter your email" required>
                     <input type="password"  id="password"  placeholder="Enter your password" required>
-                    <button type="button">Log In</button>
+                    <button type="button" class="login">Log In</button>
                 </form>
             </div>
 
             <div class="page">
-                <div class="welcome">
-                    <h3>Welcome to our Search Engine</h3>
-                    <p>To Start finding our resources, click the button below</p> <span>!</span>
-                    <button type="button">Get Started</button>
-                </div>
-            </div>
-
-            <div class="page">
-                <div class="searchform">
+                <div id="searchform">
                     <input type="text" id="searchInput" placeholder="search for a resource" required>
-                    <button type="button">Search</button>
-                </div>
-                <h2>Books and Links</h2>
-                <div id="allResult"></div>
-                <h2>Video Content</h2>
-                <div id="videoResult"></div>           
+                    <button type="button" class="search">Search</button>
+                
+                    <h2>Books and Links</h2>
+                    <div id="allResult"></div>
+                    <h2>Video Content</h2>
+                    <div id="videoResult"></div>  
+                </div>        
             </div>
         </section>
         <!--
@@ -162,10 +176,11 @@
                     Contact
                 </h2>
                 <div class="contact-form">
-                    <form class="contactForm">
+                    <form class="contactform">
                         <input type="text" placeholder="Name">
                         <input type="email" placeholder="email">
-                        <textarea placeholder="write your message here.."></textarea>
+                        <textarea placeholder="write your message here.." class="text"></textarea>
+                        <button type="button" class="submit">Submit</button>
                     </form>
                 </div>
 
@@ -177,12 +192,15 @@
         Footer section stracture
         =========================
         -->
-        <footer id="footer">
-            <div class="footer-item">
-                <p>&copy; 2026 FoloApp. All rights reserved.</p>
-            </div>
-        </footer>
+        
     </main>
-    <scrpt src="js/script.js"></scrpt>
+    <footer id="footer">
+        <div class="footer-item">
+            <p>&copy; 2026 FoloApp. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="js/script.js"></script>
 </body>
 </html>
