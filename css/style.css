@@ -112,9 +112,6 @@ section{
 }
 
 
-
-
-
 button{
     border: none;
     padding: 10px 25px;
@@ -255,10 +252,12 @@ button{
     padding: 30px;
     
 }
+
 .blog-item{
     display: flex;
    
 }
+
 .blog-item-content{
    min-height: 180px;
    background-color: azure;
@@ -268,4 +267,18 @@ button{
    overflow: hidden;
    box-shadow: 0 20px 35px rgba(11, 8, 117, 0.3);
 
+}
+
+
+@media (max-width: 760px) {
+    .blog-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blog-item-content {
+        margin: 10px;
+        padding: 20px;
+        width: auto;
+    }
 }

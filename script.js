@@ -26,16 +26,17 @@ searchInput.addEventListener('keydown', function(e) {
     }
 
 })
-// ==================================
+//==================================
 
 
 
 
-// -----------my library resource API => first API
+// ----------- my library resource API => first API
 function searchResources(query) {
     resultsDiv.textContent = 'Loading books...';
-    const url = 'https://openlibrary.org/search.json?q=' + encodeURIComponent(query) + '&limit=8';
 
+
+    const url = 'https://openlibrary.org/search.json?q=' + encodeURIComponent(query) + '&limit=8';
     fetch(url)
     .then(function(response) {
         if (!response.ok) {
@@ -102,6 +103,8 @@ const YOUTUBE_API_KEY =  'AIzaSyAfTNM0wQ_-X8nAFI0zmmuynTg00FhW8Kk';
 
 function searchYoutube(query) {
     youtubeResults.textContent = 'Loading YouTube videos...';
+
+    
     const url = 'https://www.googleapis.com/youtube/v3/search' + '?part=snippet&type=video&maxResults=6' + '&q=' + encodeURIComponent(query + ' educational tutorial') + '&key=' + encodeURIComponent(YOUTUBE_API_KEY);
     fetch(url)
     .then(function(response) {
@@ -165,5 +168,6 @@ function searchYoutube(query) {
         console.log(error);
         
     });
-}//------------------------------------------------------
+}
+//------------------------------------------------------
 
